@@ -2,9 +2,9 @@
 This document identify how a standard Json API response should be.
  please feel free to contribute !
 
-```
-Full structure of response :
 
+##### Full structure of response :
+```text
 {
 	"data": {...},
 	"errors": {...},
@@ -12,9 +12,8 @@ Full structure of response :
 }
 ```
 
-
-```
-Resource Objects:
+##### Resource Objects:
+```text
    {
  	"type": "articles",
  	"id": "1",
@@ -58,9 +57,9 @@ Resource Objects:
  }
 ```
 
-```text
+#### Error Object :  
 
-Error Object :  
+```text
 {
 	"errors": [{
 		"id": 1,
