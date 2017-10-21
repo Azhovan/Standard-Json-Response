@@ -4,7 +4,7 @@ This document identify how a standard Json API response should be.
 
 
 ##### Full structure of response :
-```text
+```
 {
 	"data": {...},
 	"errors": {...},
@@ -13,7 +13,7 @@ This document identify how a standard Json API response should be.
 ```
 
 ##### Resource Objects:
-```text
+```
    {
  	"type": "articles",
  	"id": "1",
@@ -77,4 +77,49 @@ This document identify how a standard Json API response should be.
 		"meta": {}
 	}]
 }
+```
+
+##### Relationships Object:
+```text
+	"relationships": {
+ 		"author": {
+ 			"links": {
+ 				"self": "/articles/1/relationships/author",
+ 				"related": "/articles/1/author"
+ 			},
+ 			"data": {
+ 				"type": "people",
+ 				"id": "9"
+ 			},
+ 			"meta": {}
+ 		}
+ 	}
+```
+
+#### Links Object :
+```text
+ 	"Links": {
+ 		"self": "http://example.com/posts",
+ 		"related": {
+ 			"href": "http://example.com/articles/1/comments",
+ 			"meta": {
+ 				"count": 10
+ 			}
+ 		}
+
+
+ 	}
+```
+
+#### Meta Object :
+```text
+ 	"meta": {
+ 		"copyright": "Copyright 2015 Example Corp.",
+ 		"authors": [
+ 			"Yehuda Katz",
+ 			"Steve Klabnik",
+ 			"Dan Gebhardt",
+ 			"Tyler Kellen"
+ 		]
+ 	}
 ```
