@@ -123,3 +123,11 @@ This document identify how a standard Json API response should be.
     ]
 }
 ```
+#### useful links 
+```
+https://byrondover.github.io/post/restful-api-guidelines/
+https://medium.com/@shazow/how-i-design-json-api-responses-71900f00f2db
+https://phalt.co/api-response-formats/
+http://editor.swagger.io/#/
+
+```
